@@ -19,7 +19,7 @@
     </Modules>
     <Installation>
       <RemoveDownloadFiles>FALSE</RemoveDownloadFiles>
-      <SearchMediaForCache>TRUE</SearchMediaForCache>
+      <SearchMediaForCache>FALSE</SearchMediaForCache>
       <SymLinkFilesFromCache>FALSE</SymLinkFilesFromCache>
       <PromptForDownloadMirror>FALSE</PromptForDownloadMirror>
       <EnvironmentDirectory>~/.phoronix-test-suite/installed-tests/</EnvironmentDirectory>
@@ -53,7 +53,7 @@
     <Networking>
       <NoInternetCommunication>FALSE</NoInternetCommunication>
       <NoNetworkCommunication>FALSE</NoNetworkCommunication>
-      <Timeout>20</Timeout>
+      <Timeout>1</Timeout>
       <ProxyAddress></ProxyAddress>
       <ProxyPort></ProxyPort>
     </Networking>
