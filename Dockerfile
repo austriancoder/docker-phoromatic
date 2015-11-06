@@ -9,9 +9,9 @@ RUN cd /tmp &&\
  dpkg -i phoronix-test-suite_${PHORONIX_VERSION}_all.deb &&\
  apt-get install -f -y
 
-#RUN mkdir -p /etc/service/phoromatic
 ADD runit-run-phoromatic.sh /etc/service/phoromatic/run
 ADD user-config.xml /etc/phoronix-test-suite.xml
+ADD runit-log-phoromatic.sh /etc/service/phoromatic-log/run
 
 EXPOSE 9090 9091
 
