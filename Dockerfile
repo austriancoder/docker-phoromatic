@@ -5,8 +5,8 @@ ENV PHORONIX_VERSION 6.4.0
 RUN cd /tmp &&\
  curl -O http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_${PHORONIX_VERSION}_all.deb &&\
  apt-get update &&\
- apt-get install php5-cli php5-gd php5-json php5-sqlite php-xml php-cli -y &&\
- dpkg -i phoronix-test-suite_${PHORONIX_VERSION}_all.deb &&\
+ apt-get install php5-cli php5-gd php5-json php5-sqlite -y &&\
+ dpkg --force-all -i phoronix-test-suite_${PHORONIX_VERSION}_all.deb &&\
  apt-get install -f -y
 
 ADD runit-run-phoromatic.sh /etc/service/phoromatic/run
