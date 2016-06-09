@@ -1,6 +1,6 @@
 FROM phusion/baseimage:0.9.17
 
-ENV PHORONIX_VERSION 6.2.1
+ENV PHORONIX_VERSION 6.4.0
 
 RUN cd /tmp &&\
  curl -O http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_${PHORONIX_VERSION}_all.deb &&\
